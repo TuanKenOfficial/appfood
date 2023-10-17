@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.KhachHang.GioHang">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container">
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/item_gio_hang"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ds_gioHang"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/tongDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng: 0đ"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <Button
+            android:paddingVertical="18dp"
+            android:id="@+id/thanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B73A3A"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="Thanh toán"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@id/container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/empty"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:padding="5dp"
+            android:text="Giỏ hàng trống"/>
+        <TextView
+            android:layout_width="350dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Bạn hãy đến trang chủ và mua gì đó đi rồi tiến hành đặt hàng nhé."/>
+    </LinearLayout>
+</RelativeLayout>

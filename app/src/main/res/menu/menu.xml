@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/trangChu"
+        android:icon="@drawable/round_fastfood_24"
+        android:title="Trang chủ"
+        app:cnb_backgroundColor="#4DC2185B"
+        app:cnb_iconColor="#C2185B"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="#C2185B"/>
+    <item
+        android:id="@+id/ds_hoaDon"
+        android:icon="@drawable/round_receipt_long_24"
+        android:title="Hóa đơn"
+        app:cnb_backgroundColor="#4D512DA8"
+        app:cnb_iconColor="#512DA8"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="#512DA8"/>
+    <item
+        android:id="@+id/ttCaNhan"
+        android:icon="@drawable/baseline_person_pin_24"
+        android:title="Tôi"
+        app:cnb_backgroundColor="#4D00897B"
+        app:cnb_iconColor="#00897B"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_textColor="#00897B"/>
+</menu>

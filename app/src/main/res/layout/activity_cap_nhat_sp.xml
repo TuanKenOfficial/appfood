@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activity.QuanAn.CapNhatSP">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/hinhAnh"
+        app:riv_corner_radius="10dp"
+        android:src="@drawable/img_test"
+        android:scaleType="centerCrop" />
+    <EditText
+        android:id="@+id/tenSP"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/hinhAnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề"
+        android:background="@drawable/shape_rect02"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="12dp" />
+
+    <EditText
+        android:background="@drawable/shape_rect02"
+        android:id="@+id/moTa"
+        android:gravity="top|start"
+        android:layout_marginBottom="10dp"
+        android:drawableTint="@color/colorGray02"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/giaCa"
+        android:hint="Mô tả"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="12dp" />
+    <EditText
+        android:background="@drawable/shape_rect02"
+        android:id="@+id/giaCa"
+        android:layout_below="@id/tenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá cả"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        android:padding="12dp" />
+
+    <!--Whether or not product on discount-->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/coGiamGia"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moTa"
+        android:layout_marginBottom="10dp"
+        android:text="Giảm giá?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coGiamGia"
+        android:id="@+id/linear2"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:background="@drawable/shape_rect02"
+            android:id="@+id/giamCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Giảm còn"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <TextView
+            android:background="@drawable/shape_rect02"
+            android:id="@+id/tiLe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:hint="Tỉ lệ %"
+            android:inputType="textCapSentences"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_theme_02"
+        android:text="Cập nhật"
+        android:textAllCaps="false"
+        android:id="@+id/capNhat"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"/>
+
+</RelativeLayout>

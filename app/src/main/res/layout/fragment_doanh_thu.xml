@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.QuanAn.DoanhThu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="300dp"
+            android:src="@drawable/gain"/>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Chọn thời gian"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/baseline_calendar_month_24"
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chonThoiGian"
+                android:background="@drawable/shape_rect02"
+                android:hint="Tháng/Năm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Doanh thu"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/doanhThu"
+                android:background="@drawable/shape_rect02"
+                android:hint="..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:padding="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Tổng đơn hàng"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="200dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tongDonHang"
+                android:background="@drawable/shape_rect02"
+                android:hint="..." />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xoaHet"
+            android:textColor="@color/white"
+            android:text="Làm mới"
+            android:padding="10dp"
+            android:background="@drawable/button_theme_02"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</FrameLayout>

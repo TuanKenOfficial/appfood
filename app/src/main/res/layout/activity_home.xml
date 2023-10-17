@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QuanAn.Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/toolBar"
+        android:layout_alignParentTop="true"
+        android:background="#6750A3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/avatar"
+                app:civ_border_color="@color/white"
+                app:civ_border_width=".8dp"
+                android:src="@drawable/shopivhd"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/tenQuan"
+                android:layout_marginStart="10dp"
+                android:text="Tên quán | SĐT"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/avatar"/>
+            <TextView
+                android:id="@+id/diaChi"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/tenQuan"
+                android:text="Địa chỉ"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/avatar"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolBar"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu"
+        android:id="@+id/container"/>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@color/colorGray00"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cnb_menuResource="@menu/menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_addBottomInset="false"
+        app:cnb_addLeftInset="false"
+        app:cnb_addRightInset="false"
+        app:cnb_addTopInset="false"
+        app:cnb_radius="15dp"
+        app:cnb_iconSize="28dp"
+        app:cnb_animationDuration="175"/>
+</RelativeLayout>

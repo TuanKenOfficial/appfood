@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/hinhAnh"
+                    android:src="@drawable/img_test"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/tiLe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rect05"
+                    android:padding="10dp"
+                    android:text="Giảm 10%"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:id="@+id/thaoTac"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <ImageButton
+                            android:text="Cập nhật món ăn"
+                            android:background="@drawable/button_theme_02"
+                            android:id="@+id/capNhat"
+                            android:src="@drawable/round_edit"
+                            android:backgroundTint="#B3FFEB3B"
+                            android:layout_marginEnd="10dp"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"/>
+                        <ImageButton
+                            android:background="@drawable/button_theme_02"
+                            android:text="Cập nhật món ăn"
+                            android:id="@+id/xoa"
+                            android:src="@drawable/round_delete_24"
+                            android:backgroundTint="#B3DC3333"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            app:tint="@color/white" />
+
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/tenSp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hinhAnh"
+                    android:text="Tên sản phẩm"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="25sp"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tenSp"
+                    android:text="Giá:"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="22sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/giaGoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tenSp"
+                    android:layout_toEndOf="@id/gia"
+                    android:text="Giá gốc"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/giaGiam"
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/giaGoc"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tenSp"
+                    android:text="Giá giảm"
+                    android:textColor="#E91E1E"
+                    android:textSize="22sp"/>
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear"
+                    android:paddingHorizontal="12dp"
+                    android:layout_below="@id/giaGoc"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/avatar"
+                            android:src="@drawable/shopivhd"
+                            android:layout_below="@id/giaGoc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:text="Tên quán"
+                            android:layout_marginVertical="10dp"
+                            android:id="@+id/tenQuan"
+                            android:layout_below="@id/giaGoc"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_below="@id/linear"
+                    android:id="@+id/moTa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả"
+                    android:layout_marginStart="10dp"
+                    android:paddingVertical="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/moTa"
+                    android:id="@+id/linear02"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <ImageButton
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_remove_24"
+                            android:id="@+id/giamSL"
+                            app:tint="@color/red" />
+                        <TextView
+                            android:paddingHorizontal="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:id="@+id/soLuong"/>
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tangSL"
+                            android:src="@drawable/round_add_24_02"
+                            app:tint="@color/red" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="23sp"
+                            android:paddingHorizontal="10dp"
+                            android:text="|"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tongGiaTienSp"
+                            android:textSize="18sp"
+                            android:text="100000đ"/>
+                </LinearLayout>
+                <Button
+                    android:background="#E91E1E"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:layout_below="@id/linear02"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="15dp"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/themVaoGio"
+                    android:text="Thêm vào giỏ hàng" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

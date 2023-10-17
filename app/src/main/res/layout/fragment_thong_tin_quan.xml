@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.QuanAn.ThongTinQuan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            app:riv_corner_radius="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_test" />
+
+        <EditText
+            android:id="@+id/tenQuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/avatar"
+            android:background="@drawable/shape_rect02"
+            android:hint="Tên quán"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/sdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tenQuan"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/avatar"
+            android:background="@drawable/shape_rect02"
+            android:hint="SĐT"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+
+        <LinearLayout
+            android:id="@+id/addressLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tinhTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect02"
+                android:hint="Tỉnh/TP"
+                android:inputType="textPostalAddress"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/quanHuyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+
+                android:background="@drawable/shape_rect02"
+                android:hint="Quận/Huyện"
+                android:inputType="textPostalAddress"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/diaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressLl"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:hint="Địa chỉ"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:padding="12dp" />
+        <Button
+            android:id="@+id/xacNhan"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="12dp"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:background="@drawable/button_theme_02"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dangXuat"/>
+        <Button
+            android:id="@+id/dangXuat"
+            android:layout_marginHorizontal="25dp"
+            android:paddingVertical="12dp"
+            android:text="Đăng xuất"
+            android:backgroundTint="#E91E63"
+            android:textAllCaps="false"
+            android:background="@drawable/button_theme_02"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

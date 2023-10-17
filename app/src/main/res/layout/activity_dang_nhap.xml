@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.DangNhap">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/gif"
+                android:src="@drawable/iview"
+                android:layout_centerHorizontal="true" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/gif"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Email"
+                    android:textColorHint="#737373"
+                    android:background="@drawable/shape_rect02"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/matKhau"
+                    android:textColorHint="#737373"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/shape_rect02"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:id="@+id/quenMK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_below="@id/matKhau"
+                    android:textSize="18sp"
+                    android:textColor="#737373"
+                    android:layout_centerHorizontal="true"
+                    android:text="Quên mật khẩu?" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:gravity="center"
+                   android:paddingHorizontal="20dp"
+                   android:layout_below="@id/quenMK">
+                   <Button
+                       android:id="@+id/dangNhap"
+                       android:text="Đăng nhập"
+                       android:textAllCaps="false"
+                       android:background="@drawable/button_theme_02"
+                       android:textColor="@color/white"
+                       android:textSize="18sp"
+                       android:minWidth="120dp"
+                       android:layout_marginBottom="10dp"
+                       android:paddingVertical="15dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <Button
+                       android:id="@+id/dangKy"
+                       android:text="Đăng ký"
+                       android:paddingVertical="15dp"
+                       android:textAllCaps="false"
+                       android:background="@drawable/button_theme_02"
+                       android:textColor="@color/white"
+                       android:textSize="18sp"
+                       android:minWidth="120dp"
+                       android:backgroundTint="#009688"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#3C5F66"
+    android:layout_height="match_parent"
+    tools:context=".Activity.QuenMK">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="420dp"
+        android:layout_height="250dp"
+        android:src="@drawable/forgot"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu?"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hãy nhập email để khôi phục mật khẩu"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_rect02"
+        android:elevation="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <Button
+        android:backgroundTint="#009688"
+        android:id="@+id/khoiPhuc"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:paddingVertical="12dp"
+        android:text="Gửi yêu cầu"
+        android:textAllCaps="false"
+        android:background="@drawable/button_theme_02"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dangXuat"/>
+    <Button
+        android:backgroundTint="#4CAF50"
+        android:id="@+id/troVe"
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:text="Trở về"
+        android:textAllCaps="false"
+        android:background="@drawable/button_theme_02"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dangXuat"/>
+</LinearLayout>

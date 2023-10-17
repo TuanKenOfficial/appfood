@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/hinhSP"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/img_test" />
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:padding="10dp"
+       android:layout_below="@id/hinhSP"
+       android:layout_height="wrap_content">
+       <EditText
+           android:id="@+id/tenSP"
+           android:layout_marginBottom="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Tiêu đề"
+           android:background="@drawable/shape_rect02"
+           android:inputType="textPersonName|textCapWords"
+           android:padding="12dp" />
+
+       <EditText
+           android:background="@drawable/shape_rect02"
+           android:id="@+id/moTa"
+           android:gravity="top|start"
+           android:drawableTint="@color/colorGray02"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_marginBottom="10dp"
+           android:layout_below="@id/giaCa"
+           android:hint="Mô tả"
+           android:inputType="textCapSentences|textMultiLine"
+           android:padding="12dp" />
+       <EditText
+           android:background="@drawable/shape_rect02"
+           android:id="@+id/giaCa"
+           android:layout_marginBottom="10dp"
+           android:layout_below="@id/tenSP"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Giá cả"
+           android:inputType="numberDecimal"
+           android:padding="12dp" />
+
+       <!--Whether or not product on discount-->
+       <androidx.appcompat.widget.SwitchCompat
+           android:id="@+id/coGiamGia"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/moTa"
+           android:padding="5dp"
+           android:layout_marginBottom="10dp"
+           android:text="Giảm giá?" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/coGiamGia"
+           android:layout_marginBottom="10dp"
+           android:id="@+id/linear2"
+           android:orientation="horizontal">
+
+           <EditText
+               android:background="@drawable/shape_rect02"
+               android:id="@+id/giamCon"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:drawablePadding="10dp"
+               android:hint="Giảm còn"
+               android:layout_marginEnd="5dp"
+               android:inputType="numberDecimal"
+               android:padding="12dp" />
+
+           <TextView
+               android:background="@drawable/shape_rect02"
+               android:id="@+id/tiLe"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:hint="Tỉ lệ %"
+               android:textSize="18sp"
+               android:layout_marginStart="5dp"
+               android:inputType="textCapSentences"
+               android:padding="12dp" />
+       </LinearLayout>
+
+       <Button
+           android:background="@drawable/button_theme_02"
+           android:text="Thêm mới"
+           android:textAllCaps="false"
+           android:id="@+id/themSp"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+           android:layout_marginBottom="10dp"
+           android:layout_marginTop="10dp"
+           android:paddingVertical="13dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/linear2"/>
+   </RelativeLayout>
+
+</RelativeLayout>

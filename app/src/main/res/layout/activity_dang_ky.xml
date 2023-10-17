@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".Activity.DangKy">
+
+    <EditText
+        android:id="@+id/hoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Họ tên"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/sDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="SĐT"
+        android:inputType="phone"
+        android:padding="12dp" />
+
+    <LinearLayout
+        android:id="@+id/addressLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tinhTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect02"
+            android:hint="Tỉnh/TP"
+            android:inputType="textPostalAddress"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/quanHuyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect02"
+            android:hint="Quận/Huyện"
+            android:inputType="textPostalAddress"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/diaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Địa chỉ"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/matKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/nhapLaiMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect02"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/dangKy"
+        android:textAllCaps="false"
+        android:background="@drawable/button_theme_02"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:paddingVertical="15dp"
+        android:text="Đăng ký ngay" />
+    <Button
+        android:id="@+id/dangKyQA"
+        android:textAllCaps="false"
+        android:background="@drawable/button_theme_02"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:backgroundTint="#00796B"
+        android:text="Nhấn vào đây nếu bạn là chủ quán" />
+
+</LinearLayout>
